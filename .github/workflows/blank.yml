@@ -28,6 +28,6 @@ jobs:
       - name: Check on failures
         if: steps.Lint.outcome != 'success'
         run: pre-commit run --all-files
-       - uses: stefanzweifel/git-auto-commit-action@v4
-         with:
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
           commit_message: "you must learn pep 8 noob"
